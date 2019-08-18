@@ -1,0 +1,526 @@
+@font-face {
+    font-family: montserrat;
+    src: url(../font/montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: playfair;
+    src: url(../font/playfair/PlayfairDisplay-Bold.ttf);
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    margin-top: -600px;
+}
+
+nav a {
+    font-family: montserrat;
+    text-decoration: none;
+    color: lightpink;
+    font-size: 16px;
+
+}
+
+nav ul {
+    margin-left: 745px;
+    margin-right: 10px;
+    z-index: -1;
+
+}
+
+nav li {
+    display: inline block;
+    margin-left: 205px;
+    margin-top: 40px;
+    float: left;
+}
+
+
+#slideshow {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+.container {
+    color: black;
+    font-size: 60px;
+}
+
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: playfair;
+    text-decoration: none;
+    font-size: 5em;
+}
+
+.centered1 {
+    position: absolute;
+    width: 628px;
+    height: 135px;
+    left: 40%;
+    top: 500px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: montserrat regular;
+
+    font-size: 1.2em;
+}
+
+
+#btn {
+    background: purple;
+    color: white;
+    padding: 2px 2px;
+    display: inline-block;
+    margin: 4em 0;
+}
+
+#video1 {
+    margin-top: -250px;
+    width: 900px;
+    height: 500px;
+
+}
+
+#panel {
+    background: cornflowerblue;
+    width: 200;
+    height: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#player {
+    width: 900px;
+    height: 500px;
+    margin-left: 500px;
+    margin-top: 220px;
+
+}
+
+#rewind {
+    font-family: montserrat;
+    text-decoration: none;
+    color: deeppink;
+    font-size: 1em;
+
+}
+
+#play {
+    font-family: montserrat;
+    text-decoration: none;
+    color: deeppink;
+    font-size: 1em;
+
+}
+
+.vjs-big-play-button {
+    font-family: montserrat;
+    text-decoration: none;
+    color: lightpink;
+    font-size: 1.2em;
+    background-color: red;
+    margin-left: 400px;
+    margin-top: 250px;
+    width: 300px;
+}
+
+.player-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: lightblue;
+    color: deeppink;
+    border-radius: 5px;
+    margin-left: 500px;
+    opacity: 0.2;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.player-btn:hover {
+    opacity: 1;
+}
+
+.text2 {
+    font-family: montserrat;
+    text-decoration: none;
+    color: lightpink;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 150px;
+
+}
+
+.text3 {
+    background-color: #0076FF;
+    width: 325px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: montserrat;
+    text-decoration: none;
+    color: lightpink;
+    font-size: 1.5em;
+
+
+
+}
+
+.da-thumbs {
+    margin: 0 auto;
+    list-style: none;
+    width: 1150px;
+    height: 912px;
+    position: relative;
+    margin: 50px auto;
+    padding: 0;
+
+}
+
+.da-thumbs li {
+    float: left;
+    margin: 5px;
+    background: #fff;
+    padding: 8px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.da-thumbs li a,
+.da-thumbs li a img {
+    display: block;
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.da-thumbs li a {
+    overflow: hidden;
+}
+
+.da-thumbs li a div {
+    position: absolute;
+    background: #333;
+    background: rgba(75, 75, 75, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.da-thumbs li a div span {
+    display: block;
+    padding: 10px 0;
+    margin: 40px 20px 20px 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
+}
+
+.da-thumbs li a div {
+    top: 0px;
+    left: -100%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.da-thumbs li a:hover div {
+    left: 0px;
+}
+
+.footer {
+
+    background-image: linear-gradient(#0076FF, white);
+    margin-top: 150px;
+    width: 100%;
+    height: 400px;
+}
+
+.footer1 {
+
+    text-align: center;
+    margin: 0 auto;
+    height: 160px;
+    width: 1000px;
+    color: white;
+    font-family: playfair;
+    text-decoration: none;
+    font-size: 5em;
+}
+
+#footertext {
+
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    margin-top: 100px;
+    font-family: montserrat;
+    color: lightpink;
+    font-size: 2em;
+}
+
+.open-button {
+    background-color: #0076FF;
+    text-align: center;
+    margin-left: 830px;
+    margin-top: -200px;
+    opacity: 0.5;
+    color: lightpink;
+    border: none;
+    font-family: 'montserrat';
+    font-size: 2em;
+    cursor: pointer;
+
+
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    font-family: 'montserrat';
+}
+
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-family: 'montserrat';
+}
+
+
+.form-container .cancel {
+    background-color: red;
+}
+
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.sliders {
+    margin-top: -980px;
+    margin-left: 200px;
+}
+
+.slidertitle {
+    font-family: 'montserrat';
+    color: white;
+    font-size: 1em;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1650px) {
+    ul {
+        margin-left: 55%;
+    }
+
+    li a {
+        color: white;
+    }
+
+    .headerimage .pf img {
+        left: 18vw;
+
+    }
+
+    .footer1 {
+        font-size: 3em;
+    }
+
+}
+
+@media screen and (max-width: 1465px) {
+    ul {
+        margin-left: 50%;
+    }
+
+    li a {
+        color: darkblue;
+    }
+}
+
+@media screen and (max-width: 1316px) {
+    ul {
+        margin-left: 45%;
+    }
+
+    li a {
+        color: palegreen;
+    }
+}
+
+@media screen and (max-width: 1197px) {
+    ul {
+        margin-left: 40%;
+    }
+
+    li a {
+        color: pink;
+    }
+}
+
+@media screen and (max-width: 1097px) {
+    ul {
+        margin-left: 35%;
+    }
+
+    li a {
+        color: yellow;
+    }
+
+}
+
+@media screen and (max-width: 1013px) {
+
+    li a {
+        margin-right: 20px;
+    }
+
+    #slideshow {
+        left: 12vw;
+        top: 17%;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    #da-thumbs {
+        width: 768px;
+        height: 1200px;
+    }
+}
+
+
+@media screen and (max-width: 888px) {
+
+    ul {
+        margin-left: 10%;
+    }
+
+    li a {
+        margin-right: 15px;
+    }
+
+
+    .centered {
+        font-size: 2em;
+        top: 100px;
+    }
+
+    .centered1 {
+        font-size: 1em;
+        top: 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    ul {
+        margin-left: 35%;
+    }
+
+    li a {
+        color: purple;
+    }
+
+    .centered {
+        width: 550px;
+        left: 50vw;
+        top: 100px;
+        font-size: 2em;
+
+    }
+
+    .centered1 {
+        width: 550px;
+        left: 50vw;
+        top: 200px;
+        font-size: 1em;
+
+    }
+
+
+
+    @media screen and (max-width: 668px) {
+        li a {
+            font-size: 0.813em;
+            padding: 20px;
+        }
+
+
+        .footer1 {
+            font-size: 2em;
+        }
+
+        .open-button {
+            margin-left: 20vw;
+        }
+    }
+
+    @media screen and (max-width: 579px) {
+        li a {
+            font-size: 0.688em;
+        }
+
+    }
